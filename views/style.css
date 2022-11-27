@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0;
+}
+body{
+    background: linear-gradient(140deg, rgba(5,5,82,1) 0%, rgba(0,212,255,1) 100%);
+}
+.header{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(11 100 255);
+}
+.logo {
+    position: absolute;
+    left: 0;
+    padding: 20px 120px;
+}
+.logo span{
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+
+#navbar{
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    margin-right: 200px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 25px;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    padding: 15px 30px;
+    border-radius:50px;
+}
+#navbar a:hover{
+    transition: all 1s;
+    background-color: black;
+}
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(140deg, rgba(0,212,255,1)0%, rgba(5,5,82,1)  100%);
+    border-radius: 50px;
+    height: 500px;
+    width: 40%;
+    margin: 25px;
+}
+.forms form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    padding: 20px 80px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px;
+    background-color: transparent;
+    font-family: 'Roboto Slab', serif;
+    color: whitesmoke;
+}
+input[type=submit]{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    color: white;
+    background-color: black;
+    font-family: 'Roboto Slab', serif;
+}
+.img1{
+    border-radius: 50px;
+    width: 52%;
+    height: 500px;
+    position: absolute;
+    right: 29px;
+    top: 105px;
+    background: url('/static/bg1.jpg') no-repeat center center/cover;
+}
+
+@media screen and (max-width: 1200px){
+    .header{
+        flex-direction: column;
+    }
+    .logo{
+        position: relative;
+    }
+    .img1{
+        top: 196px;
+    }
+    #navbar{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    form input{
+        padding: 20px 80px;
+        margin: 2px;
+    }
+    .img1{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        margin: 25px;
+    }
+    .contents{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #navbar{
+        flex-direction: column;
+    }
+    form input{
+        padding: 20px 40px;
+        margin: 2px;
+    }
+    .img1{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        margin: 25px;
+    }
+    .contents{
+        width: auto;
+    }
+    #navbar li{
+        list-style: none;
+        align-items: center;
+        padding: 0px 27px;
+        justify-content: center;
+        display: flex;
+    }
+    .logo{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .nav {
+        margin-top: -30px;
+    }
+}
